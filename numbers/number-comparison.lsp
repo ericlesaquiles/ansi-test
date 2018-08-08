@@ -106,27 +106,27 @@
   (=t -0.0 0.0)
   t)
 
-;; (deftest =.13
-;;   (let ((nums '(0 0.0s0 0.0f0 0.0d0 0.0l0
-;;                   #c(0.0s0 0.0s0) #c(0.0f0 0.0f0)
-;;                   #c(0.0d0 0.0d0) #c(0.0l0 0.0l0))))
-;;     (loop for x in nums
-;;           append
-;;           (loop for y in nums
-;;                 unless (= x y)
-;;                 collect (list x y))))
-;;   nil)
+(deftest =.13
+  (let ((nums '(0 0.0s0 0.0f0 0.0d0 0.0l0
+                  #c(0.0s0 0.0s0) #c(0.0f0 0.0f0)
+                  #c(0.0d0 0.0d0) #c(0.0l0 0.0l0))))
+    (loop for x in nums
+          append
+          (loop for y in nums
+                unless (= x y)
+                collect (list x y))))
+  nil)
 
-;; (deftest =.14
-;;   (let ((nums '(17 17.0s0 17.0f0 17.0d0 17.0l0
-;;                    #c(17.0s0 0.0s0) #c(17.0f0 0.0f0)
-;;                    #c(17.0d0 0.0d0) #c(17.0l0 0.0l0))))
-;;     (loop for x in nums
-;;           append
-;;           (loop for y in nums
-;;                 unless (= x y)
-;;                 collect (list x y))))
-;;   nil)
+(deftest =.14
+  (let ((nums '(17 17.0s0 17.0f0 17.0d0 17.0l0
+                   #c(17.0s0 0.0s0) #c(17.0f0 0.0f0)
+                   #c(17.0d0 0.0d0) #c(17.0l0 0.0l0))))
+    (loop for x in nums
+          append
+          (loop for y in nums
+                unless (= x y)
+                collect (list x y))))
+  nil)
 
 ;; (deftest =.15
 ;;   (let ((nums '(-17 -17.0s0 -17.0f0 -17.0d0 -17.0l0

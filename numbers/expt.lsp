@@ -95,12 +95,12 @@
         always (eql (expt c 0) 1))
   t)
 
-;; (deftest expt.8
-;;   (loop for i = (random 1.0s3)
-;;         for c = (complex i i)
-;;         repeat 1000
-;;         always (eql (expt c 0) #c(1.0s0 0.0s0)))
-;;   t)
+(deftest expt.8
+  (loop for i = (random 1.0s3)
+        for c = (complex i i)
+        repeat 1000
+        always (eql (expt c 0) #c(1.0s0 0.0s0)))
+  t)
 
 ;; (deftest expt.9
 ;;   (loop for i = (random 1.0f6)

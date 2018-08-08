@@ -34,9 +34,9 @@
                     (eql (- (imagpart x)) (imagpart xc))))
   t)
 
-;; (deftest conjugate.3
-;;   (eqlt (conjugate #c(0.0s0 0.0s0)) #c(0.0s0 -0.0s0))
-;;   t)
+(deftest conjugate.3
+  (eqlt (conjugate #c(0.0s0 0.0s0)) #c(0.0s0 -0.0s0))
+  t)
 
 ;; (deftest conjugate.4
 ;;   (eqlt (conjugate #c(1.0s0 0.0s0)) #c(1.0s0 -0.0s0))
